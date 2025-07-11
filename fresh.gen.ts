@@ -7,7 +7,9 @@ import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
-import * as $Counter from "./islands/Counter.tsx";
+import * as $layout from "./routes/layout.tsx";
+import * as $CharacterList from "./islands/CharacterList.tsx";
+import * as $SearchBox from "./islands/SearchBox.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -17,9 +19,11 @@ const manifest = {
     "./routes/api/joke.ts": $api_joke,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
+    "./routes/layout.tsx": $layout,
   },
   islands: {
-    "./islands/Counter.tsx": $Counter,
+    "./islands/CharacterList.tsx": $CharacterList,
+    "./islands/SearchBox.tsx": $SearchBox,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
