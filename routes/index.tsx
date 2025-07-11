@@ -1,9 +1,9 @@
-import {Handlers, PageProps} from "$fresh/server.ts";
-import {SearchBox}   from "../islands/SearchBox.tsx";
-import {CharacterList} from "../islands/CharacterList.tsx";
+import { Handlers, PageProps } from "$fresh/server.ts";
+import SearchBox from "../islands/SearchBox.tsx";
+import CharacterList from "../islands/CharacterList.tsx";
 
 
-interface Character{
+interface Character {
     id: number;
     name: string;
     image: string;
